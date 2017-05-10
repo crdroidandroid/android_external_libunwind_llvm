@@ -71,6 +71,10 @@ extern EHTEntry __exidx_end;
 #endif
 #endif
 
+#ifndef PT_ARM_EXIDX
+#define PT_ARM_EXIDX 0x70000001
+#endif
+
 namespace libunwind {
 
 /// Used by findUnwindSections() to return info about needed sections.
