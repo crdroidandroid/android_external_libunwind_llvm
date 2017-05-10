@@ -35,6 +35,10 @@ namespace libunwind {
 #include "EHHeaderParser.hpp"
 #include "Registers.hpp"
 
+#ifndef PT_ARM_EXIDX
+#define PT_ARM_EXIDX 0x70000001
+#endif
+
 namespace libunwind {
 
 /// Used by findUnwindSections() to return info about needed sections.
